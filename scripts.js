@@ -1,3 +1,1 @@
-var Users;
-//Defenierung Variabel Users
-
+window.alert("Sie betreten eine noch nicht fertige Seite, Fehler sind normal. :)");

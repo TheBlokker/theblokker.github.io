@@ -1,0 +1,77 @@
+﻿body {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#top{
+
+}
+#logoname{
+    font-size: 30px;
+    color: #468fcf;
+}
+#nav_main{
+    font-size: 24px;
+    color: rgb(151, 23, 23);
+    
+}
+#nav{
+    margin-top: 41px;
+    margin-bottom: 200px;
+    
+}
+
+#side_links{
+    float: left;
+    
+    margin-left: 50px;
+}
+
+#side_middle{
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#side_right{
+    float: left;
+    margin-left: 50px;
+    
+}
+
+#main{
+    margin-top: 500px;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+
+#text_about_me{
+    font-size: 35px;
+}
+
+
+
+#contact{
+   margin-left: 25px;
+   margin-right: 25px; 
+   margin-top: 150px;
+   background-color: gray;
+   color: white;   
+
+}
+
+
+/* Link entfärben*/
+#text_goldsrc{
+    color: black;
+}
+#text_source{
+    color: black;
+}
+#text_giants{
+    color: black;
+}
+#text_VDC{
+    color: black;
+}
+
+
