@@ -19,59 +19,82 @@
     margin-bottom: 200px;
     
 }
-
-#side_links{
-    float: left;
-    
-    margin-left: 50px;
+li {
+    display:grid;
 }
-
-#side_middle{
-    float: left;
-    margin-left: 50px;
-    margin-right: 50px;
+.menu-bar {
+    background: #52EB8A;
 }
-
-#side_right{
-    float: left;
-    margin-left: 50px;
-    
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color:aquamarine;
+}
+.menu-bar ul li {
+    width: 130px;
+    margin: 15px;
+    padding: 15px;
 }
 
 #main{
-    margin-top: 500px;
-    margin-left: 25px;
-    margin-right: 25px; 
+    margin-top: 41px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none; 
+}
+#mapping{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#tutorial{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+#links{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #text_about_me{
     font-size: 35px;
 }
+a {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    
+}
+a:hover{
+    text-decoration: overline;
+    
+    color: red;
+    animation-name: linkhover;
+    animation-duration: 2s;
+}
 
+@keyframes linkhover {
+    0% {
+        color: #468fcf;
+    }
+    50% {
+        color: #f0b3b3;
+    }
+    100% {
+        color: red;
+    }
+}
 
 
 #contact{
-   margin-left: 25px;
-   margin-right: 25px; 
-   margin-top: 150px;
-   background-color: gray;
-   color: white;   
-
-}
-
-
-/* Link entfärben*/
-#text_goldsrc{
-    color: black;
-}
-#text_source{
-    color: black;
-}
-#text_giants{
-    color: black;
-}
-#text_VDC{
-    color: black;
-}
+    margin-left: 25px;
+    margin-right: 25px; 
+    margin-top: 15px;
+    background-color: rgba(150, 141, 141, 0.575);
+    color: white;   
+    
+ }
 
 
