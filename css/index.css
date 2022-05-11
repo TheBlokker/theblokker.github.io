@@ -45,6 +45,7 @@ li {
 }
 #mapping{
     margin: 20px;
+    margin-left: 250px;
     display: flex;
     justify-content: space-between;
 }
