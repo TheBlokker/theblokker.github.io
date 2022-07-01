@@ -1,10 +1,10 @@
 ﻿body {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: white;
+    background-color: rgba(205, 161, 255, 0.815);
 }
-#top{
-
+button{
+    color: rgba(205, 161, 255, 0.815);
 }
 #logoname{
     font-size: 30px;
