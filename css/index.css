@@ -38,17 +38,16 @@ li {
 }
 
 #main{
-    margin-top: 41px;
-    margin-bottom: 120px;
+      
     display: flex;
     justify-content: center;
     text-decoration: none; 
 }
 #mapping{
     margin: 20px;
-    margin-left: 250px;
+    margin-left: 175px;
     display: flex;
-    justify-content: space-between;
+    
 }
 #tutorial{
     margin: 20px;
@@ -96,7 +95,8 @@ a:hover{
     margin-top: 15px;
     background-color: rgba(150, 141, 141, 0.575);
     color: white;   
-    
+    display: flex;
+    justify-content: center;
  }
 
 
