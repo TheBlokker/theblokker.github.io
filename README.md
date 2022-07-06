@@ -1,6 +1,9 @@
 # theblokker.github.io
 
-Falls sie diesen Screen Sehen. <br>
-Leider ist wegen Wartungsarbeiten die Seite nicht errichbar. 
-<br> Wir bemühen uns das Problem zu finden. <br> Vielen Dank. <br>
-        &#128077;
+Dies ist TheBlokkers Website. Bei Beschwerden bitte an [theblokker.help@gmail.com](mailto:theblokker.help@gmail.com) senden. 
+
+Bei möglichen Vorschlägen ist es erlaubt den Code etwas hinzufügen, solang niemand Schaden nimmt.<br> <br>
+
+TheBlokker
+
+:+1::desktop_computer::movie_camera::vhs:
