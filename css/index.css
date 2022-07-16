@@ -38,29 +38,13 @@ li {
 }
 
 #main{
-      
+          
     display: flex;
     justify-content: center;
     text-decoration: none; 
 }
-#mapping{
-    margin: 20px;
-    margin-left: 175px;
-    display: flex;
-    
-}
-#tutorial{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-#links{
-    margin: 20px;
-    display: flex;
-    justify-content: flex-end;
-}
 
-#text_about_me{
+#about-me{
     font-size: 35px;
 }
 a {
