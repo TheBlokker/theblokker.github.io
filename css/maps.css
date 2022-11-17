@@ -4,14 +4,6 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#contact {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 150px;
-    background-color: gray;
-    color: white;
-}
-
 a:hover {
     text-decoration: overline;
     color: red;
@@ -139,4 +131,13 @@ a {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#contact {
+    /* Element | https://theblokker.github.io/ */
+    margin-top: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(150, 141, 141, 0.575);
+    color: white;
 }
