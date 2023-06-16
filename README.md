@@ -1,5 +1,5 @@
 # theblokker.github.io
 
-Dies sit TheBlokkers Website
+Dies ist TheBlokkers Website
 
-bitte bei fehlern auf den Issues gehen
+bitte bei fehlern, einen Issue schreiben
