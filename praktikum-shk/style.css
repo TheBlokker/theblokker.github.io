@@ -27,6 +27,14 @@ hr{
     color: #000000;
     border-top: 6px solid #000000;
 }
+.bewerbungsanschreiben {
+    margin-left: 140px;
+    margin-right: 30px;
+    
+}
+.bewerbungsanschreiben p {
+text-align: left;   
+}
 .aboutme{
     margin-bottom: 5em;
 }
