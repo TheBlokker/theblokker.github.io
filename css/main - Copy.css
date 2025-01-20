@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+}
+
+#flag {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+}
