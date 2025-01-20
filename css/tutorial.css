@@ -14,22 +14,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-li {
-    display:grid;
-}
-.menu-bar {
-    background: #52EB8A;
-}
-.menu-bar ul {
-    display: inline-flex;
-    list-style: none;
-    color:aquamarine;
-}
-.menu-bar ul li {
-    width: 130px;
-    margin: 15px;
-    padding: 15px;
-}
+
 .active, .menu-bar ul li:hover{
     background: rgba(0, 128, 0, 0.95);
     border-radius: 3px;

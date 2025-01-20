@@ -1,7 +1,7 @@
 ﻿    body {
         text-align: center;
         font-family: "Josefin Sans", serif;
-        background-color: rgba(134, 68, 209, 0.815);
+        background-color: rgba(221, 56, 255, 0.81);
     }
     
     button {
@@ -24,8 +24,8 @@
     }
     
     li {
-        display: grid;
-    }
+          display: grid;
+      }
     
     .menu-bar {
         background: #52EB8A;
@@ -101,12 +101,7 @@
     #aboutme {
         font-size: 30px;
     }
-    
-    #contact {
-        /* Element | https://theblokker.github.io/ */
-        margin-top: 300px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: rgba(150, 141, 141, 0.575);
-        color: white;
+    #footer {
+        text-align: center;
+        background-color: #52EB8A;
     }
