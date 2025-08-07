@@ -2,104 +2,171 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>Tech Roleplay - GTA Roleplay with special technolgie</title>
-    <link href="fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
-    <link href="fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
-    <link href="fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;1,200&display=swap');
-    </style>
-    <script src="scripts.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJS5QV5VZT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Tech Roleplay – Realistisches GTA Roleplay mit Technologie</title>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-HJS5QV5VZT');
-    </script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Josefin Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="font-sans bg-gray-100 text-gray-900">
+  <!-- Language Switcher -->
+  <div class="bg-gray-800 text-white text-sm py-2 px-4 flex justify-end space-x-4">
+    <button onclick="setLanguage('de')">Deutsch</button>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('fr')">Français</button>
+  </div>
 
-    <div class="px-3 py-2 text-bg-secondary border-bottom">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-
-                </a>
-
-                <ul class="nav col-10 col-lg-auto my-1 justify-content-center my-md-0 text-small">
-                    <li>
-                        <a href="" class="nav-link text-white " id="script-top">
-                            <img src="" alt=""> Start <i class="fa-solid fa-house fa-lg" style="color: #a998a8;"></i>
-                        </a>
-                        <script>
-                            const sclelment = document.getElementById("script-top");
-                            sclelment.scrollTop();
-                        </script>
-                    </li>
-                    <li>
-                        <a href="#geschichte" class="nav-link text-white">
-                            <img src="" alt=""> Geschichte <i class="fa-solid fa-landmark fa-lg" style="color: #e3c635;"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <img src="" alt=""> News <i class="fa-regular fa-newspaper fa-lg" style="color: #a5afcf;"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <img src="" alt=""> Gallerie <i class="fa-regular fa-image fa-lg" style="color: #00d5ff;"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <img src="" alt=""> Anforderungen <i class="fa-solid fa-check fa-lg" style="color: #75ea8d;"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-link text-white">
-                            <img src="" alt=""> Spielen <i class="fa-solid fa-play fa-lg" style="color: #21e499;"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <!-- Header -->
+  <header class="bg-gray-900 text-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-semibold" data-i18n="siteTitle">Tech Roleplay</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:underline" data-i18n="navStart">Start</a>
+        <a href="#geschichte" class="hover:underline" data-i18n="navHistory">Geschichte</a>
+        <a href="#" class="hover:underline" data-i18n="navNews">News</a>
+        <a href="#" class="hover:underline" data-i18n="navGallery">Galerie</a>
+        <a href="#" class="hover:underline" data-i18n="navRequirements">Anforderungen</a>
+        <a href="#" class="hover:underline" data-i18n="navJoin">Beitreten</a>
+      </nav>
     </div>
-    <div id="main">
-        <main>
-            <div class="my-5">
-                <div class="p-5 text-center bg-body-tertiary">
-                    <div class="container py-5">
-                        <h1 class="text-body-emphasis">Herzlich Willkommen!</h1>
-                        <img src="img/IMG_0430.png" alt="Tech Roleplay" title="Tech Roleplay" height="256">
-                        <p class="col-lg-8 mx-auto lead">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">
-                                    Tech Roleplay - Ein Roleplay Server welcher auf einer spizellen Technolgie läuft. Hier ist die Website für das Projekt.</font>
-                            </font>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--mainwith image and text, .. x-->
-            <div class="geschichte" id="geschichte"></div>
-        </main>
-    </div>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="bg-white text-center py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4" data-i18n="welcome">Willkommen bei Tech Roleplay</h2>
+      <p class="text-lg text-gray-700 mb-6" data-i18n="heroText">
+        Ein GTA-Roleplay-Projekt mit maximaler technischer Tiefe, realistischer Simulation und komplettem Fokus auf immersives RP.
+      </p>
+      <img src="img/IMG_0430.png" alt="Logo Tech Roleplay" title="Tech Roleplay Logo" class="mx-auto h-64">
+    </div>
+  </section>
+
+  <!-- Geschichte -->
+  <section id="geschichte" class="bg-gray-50 py-12">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-4" data-i18n="ourStory">Unsere Geschichte</h3>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto" data-i18n="storyText">
+        Das Projekt „Tech Roleplay“ entstand aus der Vision, ein realistisches, detailgetreues Roleplay-Erlebnis zu schaffen – fernab von klassischen RP-Standards. Mit eigens entwickelter Technologie, physikbasierten Systemen und einem einzigartigen Gesundheitsmodell setzen wir neue Maßstäbe im deutschsprachigen RP.
+      </p>
+    </div>
+  </section>
+
+  <!-- Task Table (nur als Platzhalter – übersetzung kann später erfolgen) -->
+  <section class="py-12">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-8" data-i18n="roadmap">System-Roadmap</h3>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-300 text-sm">
+          <thead>
+            <tr class="bg-gray-200 text-gray-700 text-left">
+              <th class="p-3 border" data-i18n="task">Task</th>
+              <th class="p-3 border" data-i18n="system">System</th>
+              <th class="p-3 border" data-i18n="phase">Phase</th>
+              <th class="p-3 border" data-i18n="status">Status</th>
+              <th class="p-3 border" data-i18n="description">Beschreibung</th>
+              <th class="p-3 border" data-i18n="priority">Priorität</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Tabelleinträge wie gehabt -->
+          </tbody>
+        </table>
+        <p class="text-sm text-gray-500 mt-2" data-i18n="note">Hinweis: Diese Liste ist ein Auszug. Weitere Systeme folgen in der finalen Roadmap-Version.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS Translation Script -->
+  <script>
+    const translations = {
+      de: {
+        siteTitle: "Tech Roleplay",
+        navStart: "Start",
+        navHistory: "Geschichte",
+        navNews: "News",
+        navGallery: "Galerie",
+        navRequirements: "Anforderungen",
+        navJoin: "Beitreten",
+        welcome: "Willkommen bei Tech Roleplay",
+        heroText: "Ein GTA-Roleplay-Projekt mit maximaler technischer Tiefe, realistischer Simulation und komplettem Fokus auf immersives RP.",
+        ourStory: "Unsere Geschichte",
+        storyText: "Das Projekt … im deutschsprachigen RP.",
+        roadmap: "System-Roadmap",
+        task: "Task",
+        system: "System",
+        phase: "Phase",
+        status: "Status",
+        description: "Beschreibung",
+        priority: "Priorität",
+        note: "Hinweis: Diese Liste ist ein Auszug. Weitere Systeme folgen in der finalen Roadmap-Version."
+      },
+      en: {
+        siteTitle: "Tech Roleplay",
+        navStart: "Home",
+        navHistory: "History",
+        navNews: "News",
+        navGallery: "Gallery",
+        navRequirements: "Requirements",
+        navJoin: "Join",
+        welcome: "Welcome to Tech Roleplay",
+        heroText: "A GTA roleplay project with maximum technical depth, realistic simulation, and full focus on immersive RP.",
+        ourStory: "Our Story",
+        storyText: "The 'Tech Roleplay' project was born from a vision … set new standards in German-speaking RP.",
+        roadmap: "System Roadmap",
+        task: "Task",
+        system: "System",
+        phase: "Phase",
+        status: "Status",
+        description: "Description",
+        priority: "Priority",
+        note: "Note: This is a preview. More systems will follow in the final roadmap version."
+      },
+      fr: {
+        siteTitle: "Tech Roleplay",
+        navStart: "Accueil",
+        navHistory: "Histoire",
+        navNews: "Actualités",
+        navGallery: "Galerie",
+        navRequirements: "Exigences",
+        navJoin: "Rejoindre",
+        welcome: "Bienvenue chez Tech Roleplay",
+        heroText: "Un projet GTA Roleplay avec une profondeur technique maximale, une simulation réaliste et un accent total sur le RP immersif.",
+        ourStory: "Notre histoire",
+        storyText: "Le projet « Tech Roleplay » est né d'une vision … poser de nouveaux standards dans le RP francophone.",
+        roadmap: "Feuille de route du système",
+        task: "Tâche",
+        system: "Système",
+        phase: "Phase",
+        status: "Statut",
+        description: "Description",
+        priority: "Priorité",
+        note: "Remarque : Cette liste est un extrait. D'autres systèmes suivront dans la version finale de la feuille de route."
+      }
+    };
+
+    function setLanguage(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        el.textContent = translations[lang][key] || key;
+      });
+    }
+  </script>
 </body>
 
 </html>
