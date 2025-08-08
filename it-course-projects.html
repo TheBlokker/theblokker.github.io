@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My IT Course Projects</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Josefin Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <header class="p-6 text-center bg-gray-800 text-white">
+    <h1 class="text-3xl font-bold">My IT Projects</h1>
+    <p class="text-gray-300">Showcasing my school work & experiments</p>
+  </header>
+
+  <main class="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Project Card -->
+
+<div class="min-h-screen flex items-center justify-center">
+
+</div>
+    <div id="repo-list" class="flex flex-col gap-6 max-w-xl mx-auto"></div>
+
+  <script>
+    // Your GitHub repos to display
+    const repos = [
+      { owner: "TheBlokker", repo: "Simple-Hello-World" },
+      { owner: "TheBlokker", repo: "SimpleDivision" },
+      { owner: "TheBlokker", repo: "SimpleCashier" },
+      { owner: "TheBlokker", repo: "KoerperCalc1.0" },
+      { owner: "TheBlokker", repo: "KoerperCalc2.0" },
+      { owner: "TheBlokker", repo: "KoerperCalc3.0" },
+      { owner: "TheBlokker", repo: "SpeedCodingDelphi" },
+      { owner: "TheBlokker", repo: "pq-Formel" },
+      { owner: "TheBlokker", repo: "Notenberechung" },
+      { owner: "TheBlokker", repo: "Altersbestimmung" },
+      { owner: "TheBlokker", repo: "GraphsPlot" },
+      { owner: "TheBlokker", repo: "accountsystem-with-email-and-pwrd" },
+      { owner: "TheBlokker", repo: "Verschluesselung-Delphi" },
+      { owner: "TheBlokker", repo: "Paketprogramm" },
+      { owner: "TheBlokker", repo: "TheWuerfelGame" },
+    ];
+
+    async function loadRepos() {
+    const container = document.getElementById('repo-list');
+
+    for (const { owner, repo } of repos) {
+
+
+      const card = document.createElement('a');
+      card.href = `https://github.com/${owner}/${repo}`;
+      card.target = "_blank";
+      card.className = "bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col";
+
+      card.innerHTML = `
+        <div class="mb-2 text-sm text-gray-500">GitHub</div>
+        <h2 class="text-lg font-semibold text-blue-600 mb-2">${repo}</h2>
+        `
+
+      container.appendChild(card);
+    }
+  }
+
+    loadRepos();
+  </script>
+
+
+
+    <!-- Repeat for more -->
+  </main>
+
+  <footer class="p-4 text-center text-gray-500 text-sm">
+    &copy; 2025 Timm J. Göring
+  </footer>
+
+</body>
+</html>
